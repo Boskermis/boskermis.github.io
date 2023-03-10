@@ -9,11 +9,11 @@ if(isset($_POST['submit'])){
 	$result = mail($to,$subject,$message,$headers);
 
 	if ($result) {
-		echo '<script type="text/javascript">alert("Your Message was sent Successfully!");</script>';
+		echo '<script type="text/javascript">alert("Uw bericht is verzonden.  We bezorgen u zo snel mogelijk een antwoord!");</script>';
 		echo '<script type="text/javascript">window.location.href = window.location.href;</script>';
 
 	}else{
-		echo '<script type="text/javascript">alert("Sorry! Message was not sent, Try again Later.");</script>';
+		echo '<script type="text/javascript">alert("Sorry! Uw bericht is niet verzonden, probeer later nog eens...");</script>';
 		echo '<script type="text/javascript">window.location.href = window.location.href;</script>';
 	}
 }
