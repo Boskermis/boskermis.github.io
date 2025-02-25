@@ -1,95 +1,393 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .topnav {
-    overflow: hidden;
-    background-color: red;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-  }
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  .topnav a.active {
-    background-color: red;
-    color: white;
-  }
-  .main {
-  margin-top: 30px; /* Add a top margin to avoid content overlay */
-  }
-  </style>
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
-  <head>
-    <meta http-equiv="content-type" content="text/html;charset=windows-1252">
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v5.0"></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>Boskermis 2024</title>
-  </head>
-  <body>
-    <div class="topnav" align="center">
-      <a class="active" href="#home"><i class="fa fa-fw fa-home"></i>Home</a>
-      <a href="#ReglementRommelmarkt"><i class="fa fa-fw fa-shopping-basket"></i>Rommelmarkt</a>
-      <a href="#Contact"><i class="fa fa-fw fa-envelope"></i>Contact</a>
-      <a href="https://www.facebook.com/Boskermis/"><i class="fa fa-fw fa-facebook"></i>Facebook</a>    
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Boskermis 2025</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/uil.jpg" alt="" class="img-fluid rounded-circle">
     </div>
-    
-    <a id="home"></a>
-    <div align="center"><br><br><br> 
-    <b>Beste bezoeker,<br> 
-    <br> 
-    Dit jaar zal Boskermis enkel op 1 mei doorgaan.<br>   
-    We organiseren dan onze rommelmarkt met meer dan 2 kilometer aan standhouders en gratis inkom.<br> 
-    Standhouders mogen nog altijd gratis aanschuiven vanaf 6 uur s'morgens.<br> 
-    Indien je vragen hebt kan je ons altijd contacteren op vzwdebosuilen@hotmail.com.<br> 
-    <br> 
-    Tot op 1 mei!<br> 
-    <br> 
-    De Bosuilen  <br>
-  </b> 
-  </div>
-    <a id="Affiche">
-        <!-- Indicators -->       
-    <div class="img-div" align="center"> 
-      <img src=".\images\BoskermisFlyer-page001.jpg" alt="Affiche Boskermis 2024" style="max-width:80%;height:auto;">        
-    </div>    
-    <div align="center"><a id="Locatie"><h1>Locatie</h1></a><br>    
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10074.105750822117!2d5.338409728304955!3d50.85845310730371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c11f24babc1737%3A0xedeac9122b0a36d!2sBosstraat%2075%2C%203830%20Wellen!5e0!3m2!1snl!2sbe!4v1577656188657!5m2!1snl!2sbe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Boskermis 2025</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <!-- <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>-->
+      <a href="https://www.facebook.com/Boskermis/" class="facebook"><i class="bi bi-facebook"></i></a>
+      <!--<a href="#" class="instagram"><i class="bi bi-instagram"></i></a>-->
+      <!--<a href="#" class="google-plus"><i class="bi bi-skype"></i></a>-->
+      <!--<a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>-->
     </div>
-    <div align="center">
-    <a id="OverOns"><h1>Over Ons</h1></a><br>
-    Boskermis wordt in 2024 reeds voor de 24ste keer georganiseerd door de Bosuilen.<br>  
-    Wat begonnen is als een buurtfeest onder een boom, is vandaag uitgegroeid tot een evenement waar we best trots op zijn.<br>
-    Indien je ook wil meewerken, laat het ons weten via <b>vzwdebosuilen@hotmail.com</b>.
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> Over</a></li>
+        <!--<li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>-->
+        <li><a href="#portfolio"><i class="bi bi-broadcast-pin navicon"></i> Programma</a></li>
+        <!--<li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>-->
+        <!--<li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#">Dropdown 1</a></li>
+            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Deep Dropdown 1</a></li>
+                <li><a href="#">Deep Dropdown 2</a></li>
+                <li><a href="#">Deep Dropdown 3</a></li>
+                <li><a href="#">Deep Dropdown 4</a></li>
+                <li><a href="#">Deep Dropdown 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Dropdown 2</a></li>
+            <li><a href="#">Dropdown 3</a></li>
+            <li><a href="#">Dropdown 4</a></li>
+          </ul>
+        </li>-->
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <!--<img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">-->
+      <img src="assets/img/Rommel.jpg" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Boskermis 2025</h2>
+        <p><span class="typed" data-typed-items="1 Mei 2025, Bosstraat Wellen, Gratis, 2 kilometer Rommelmarkt,7 tot 17 uur"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Over Boskermis</h2>
+        <!--<p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>-->
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/tent.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <!--<h2>UI/UX Designer &amp; Web Developer.</h2>-->
+            <h2>Geschiedenis</h2>
+            <!--<p class="fst-italic py-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>email@example.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>-->
+            <p class="py-3">
+              Boskermis wordt in 2025 reeds voor de 25ste keer georganiseerd door vzw De Bosuilen.  
+              Wat begonnen is als een buurtfeest onder een boom, is vandaag uitgegroeid tot een evenement waar we best trots op zijn.
+              In de loop der jaren hebben we verschillende grote artiesten over de vloer gehad zoals De Romeo's, Sam Gooris, Jetti Paletti,...
+              Helaas kunnen we geen kermisbal meer houden, maar onze rommelmarkt op 1 mei gaat nog altijd door!
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-calendar-event"></i>
+              <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Jaar</strong> <span></span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-blockquote-right"></i>
+              <span data-purecounter-start="0" data-purecounter-end="2000" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Meter rommelmarkt</strong> <span></span></p>
+            </div>
+          </div><!-- End Stats Item -->         
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Programma</h2>
+        <p>Ons programma voor 1 mei ziet er als volgt uit:</p>
+        <p>06:00 - 07:00 - Opbouw rommelmarkt </p>
+        <p>07:00 - 17:00 - Rommelmarkt </p>
+        <p>17:00 - 18:00 - Opruimen rommelmarkt </p>
+        <p></p>
+        <p>Vanaf 6 uur tot 19 uur is de Bosstraat afgesloten voor alle verkeer.  Een omleiding is voorzien.</p>
+
+        <h2>Reglement Standhouders Rommelmarkt</h2>
+        <h3>Waar?</h3>
+        <p>De Bosstraat te Wellen wordt verkeersvrij gemaakt tussen de Bodemstraat en de Plattestraat voor de rommelmarkt.
+          Je kan deze straat bereiken vanuit Alken via de Leemkuilstraat. Via de Zonneveldweg of de Vloeiherkstraat in Wellen kan je de Bosstraat ook bereiken.
+        </p>
+        <h3>Hoe laat?</h3>
+        <p>Standhouders mogen beginnen op te bouwen vanaf 6:00, de rommelmarkt zelf begint vanaf 7:00 en duurt tot 17:00.  Vanaf 19:00 wordt de Bosstraat weer vrijgegeven.</p>
+        <h3>Wat kost een standplaats?</h3>
+        <p>Niets. Standplaatsen zijn bij ons volledig gratis.</p>
+        <h3>Moet ik mijn standplaats reserveren?</h3>
+        <p>Een standplaats reserveren is niet nodig. We hebben genoeg ruimte en zelfs uitwijkmogelijkheden naar de zijstraten van de Bosstraat indien nodig.</p>
+        <h3>Hoe groot mag mijn stand zijn?</h3>
+        <p>Hier zijn er ook geen limieten, wel vragen we om de aanwijzingen van de organisatie en de security op te volgen. Uw wagen mag bij uw stand blijven staan.</p>
+        <h3>Veiligheid voorop!</h3>
+        In het midden van de weg moet omwille van de veiligheid een strook van minstens 3 meter breed vrij blijven.
+        <h3>Wat mag ik verkopen?</h3>
+        Enkel gebruikte voorwerpen mogen verkocht worden. De verkoop van nieuwe voorwerpen en etenswaren is niet toegestaan.
+        De organisatie behoudt zich dan ook het recht om standhouders te weigeren of te verwijderen indien niet aan bovenstaande voorwaarden wordt voldaan.
+
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/D1000127.JPG.jpg" class="img-fluid" alt="">                
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/D1000131.JPG.jpg" class="img-fluid" alt="">               
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/D1000132.JPG.jpg" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/D1000133.JPG.jpg" class="img-fluid" alt="">
+                
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/D1000134.JPG.jpg" class="img-fluid" alt="">
+                
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/D1000135.JPG.jpg" class="img-fluid" alt="">                
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/D1000136.JPG.jpg" class="img-fluid" alt="">                
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/D1000137.JPG.jpg" class="img-fluid" alt="">
+                
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/D1000138.JPG.jpg" class="img-fluid" alt="">                
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/D1000140.JPG.jpg" class="img-fluid" alt="">                
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/D1000141.JPG.jpg" class="img-fluid" alt="">                
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/D1000142.JPG.jpg" class="img-fluid" alt="">                
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>        
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Bosstraat Wellen</p>
+                </div>
+              </div><!-- End Info Item -->              
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>vzwdebosuilen@hotmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10074.105750822117!2d5.338409728304955!3d50.85845310730371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c11f24babc1737%3A0xedeac9122b0a36d!2sBosstraat%2075%2C%203830%20Wellen!5e0!3m2!1snl!2sbe!4v1577656188657!5m2!1snl!2sbe" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>        
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">VZW De Bosuilen</strong> <span>Alle rechten voorbehouden</span></p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+      </div>
     </div>
-    <div align="center">
-      <a id="ReglementRommelmarkt"><h1>Reglement Rommelmarkt</h1></a><br>
-      Ons reglement voor de rommelmarkt vind je hier: <a href =".\Boskermis-ReglementRommelmarkt.pdf">Reglement</a>.
-    </div>
-    <div align="center">
-      <a id="Contact"><h1>Contact</h1></a><br>
-      Je kan ons het beste bereiken via ons emailadres <b>vzwdebosuilen@hotmail.com</b>.
-    </div>     
-  </body>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
